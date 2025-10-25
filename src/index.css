@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #070707;
+  --color-secondary: #f3f3f3;
+  --color-tertiary:rgb(162, 255, 138);
+  --color-tertiary-muted:rgb(147, 232, 126);
+
+
+  --text-white: #ffffff;
+  --text-dark: #111111;
+  --text-light: #606060;
+}
+
+body {
+  color: var(--text-dark);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+/* Backgrounds */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+
+/* Text Colors */
+.text-primary-dark {
+  color: var(--text-dark);
+}
+.text-primary-white {
+  color: var(--text-white);
+}
+.text-secondary {
+  color: var(--text-light);
+}
+.text-tertiary {
+  color: var(--color-tertiary);
+}
+
+/* Titles */
+.section-title {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 70px;
+}
+
+/* buttons */
+.btn-primary {
+  background-color: var(--color-tertiary);
+  transition: background-color 0.3s ease-out;
+}
+.btn-primary:hover {
+  background-color: var(--color-tertiary-muted);
+}
+.btn-secondary {
+  background-color: var(--color-primary);
+  color: var(--text-white);
+  transition: background-color 0.3s ease-out;
+}
+.btn-secondary:hover {
+  background-color: var(--color-secondary);
+  color: var(--text-dark);
+}
+
+/* Tablet (1024px) */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 58px;
+  }
+}
+
+/* Mobile (768px) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
