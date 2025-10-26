@@ -70,6 +70,13 @@ body {
   background-color: var(--color-secondary);
   color: var(--text-dark);
 }
+.btn-tertiary {
+  background-color: var(--text-white);
+  transition: background-color 0.3s ease-out;
+}
+.btn-tertiary:hover {
+  background-color: var(--color-secondary);
+}
 
 /* Tablet (1024px) */
 @media (max-width: 1024px) {
