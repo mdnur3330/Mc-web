@@ -65,7 +65,7 @@ const Contact = () => {
               for a course? Let’s chat.
             </p>
           </div>
-          <form className="space-y-4 flex-1 md:w-3/4">
+          <form className="space-y-4 flex-1 md:w-5/6">
             <div className="border border-gray-300">
               <input
                 type="text"
@@ -112,7 +112,7 @@ const Contact = () => {
           <img
             src={logo}
             alt="Contact illustration"
-            className="rounded-2xl shadow-lg"
+            className=""
           />
         </div>
       </div>

@@ -11,7 +11,7 @@ const SkillDevelopmentPrograms = () => {
     return (
         <Container>
             <h1 className='section-title my-12'>Choose your growth <br /> path.</h1>
-            <div className='flex justify-between gap-9 '>
+            <div className='flex flex-col md:flex-row justify-between gap-9 '>
                 {development.map(path => <div key={path.title} className='bg-secondary flex flex-col justify-between gap-14 p-8 border-t-10'
                 style={{ borderColor: path.borderColor }}
                 >
@@ -25,7 +25,7 @@ const SkillDevelopmentPrograms = () => {
                          />
                 </div>)}
             </div>
-            <div className='mt-8'>
+            <div className='mt-8 border-b pb-16'>
                 <MarqueeText>
                     BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-
                 </MarqueeText>

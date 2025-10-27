@@ -18,7 +18,7 @@ const TrustedByLearners = () => {
                 alt=""
                 className='w-full h-[400px]'
                   />
-                <div className='flex justify-between gap-6 my-5'>
+                <div className='flex flex-col md:flex-row justify-between gap-6 my-5'>
                     {items.map(item => <div className='flex flex-col justify-between gap-5'>
                         <p>{item.des}</p>
                         <div>
