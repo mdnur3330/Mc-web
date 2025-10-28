@@ -1,51 +1,3 @@
-// import { NavLink } from "react-router";
-// import logo from "../assets/Logo.png"
-// import Button from "./Button";
-
-// const Nav = () => {
-//   return (
-//   <nav className="flex justify-between md:px-20 py-10 bg-secondary">
-//     <div>
-//       <img src={logo} alt="" />
-//     </div>
-//     <div className="flex gap-5 text-xl font-medium items-center">
-//       <div className="flex gap-5 text-xl font-medium bg-white rounded-full px-11 py-3">
-//         <NavLink>Home</NavLink>
-//         <NavLink>About</NavLink>
-//         <NavLink>Service</NavLink>
-//         <NavLink>Blog</NavLink>
-//         <NavLink>Portfolio</NavLink>
-//         <NavLink>Menu</NavLink>
-//       </div>
-//       <div>
-//         <Button label="Contact US"  className="btn-primary"/>
-//       </div>
-//     </div>
-//   </nav>
-//   );
-// };
-
-// export default Nav;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { useState } from "react";
 import { NavLink } from "react-router";
 import logo from "../assets/Logo.png";
@@ -57,7 +9,7 @@ const Nav = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const navLinks = ["Home", "About", "Service", "Blog", "Portfolio", "Menu"];
+  const navLinks = ["Home", "About", "Service", "Portfolio", "Testimonial"];
 
   return (
     <nav className="bg-secondary py-6 md:py-8 px-6 md:px-20 flex justify-between items-center">
@@ -72,7 +24,7 @@ const Nav = () => {
           {navLinks.map((link) => (
             <NavLink
               key={link}
-              to={`/${link.toLowerCase()}`}
+              to={link === "Home"? "/":`/${link.toLowerCase()}`}
               className="hover:text-primary transition-colors"
             >
               {link}
@@ -95,7 +47,7 @@ const Nav = () => {
           {navLinks.map((link) => (
             <NavLink
               key={link}
-              to={`/${link.toLowerCase()}`}
+              to={link === "Home"? "/":`/${link.toLowerCase()}`}
               onClick={() => setIsOpen(false)}
               className="hover:text-primary transition-colors"
             >

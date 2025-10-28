@@ -1,5 +1,5 @@
 import Container from './Container';
-import logo from "../assets/group.png"
+import logo from "../assets/plaseHolder.png"
 import MarqueeText from './MarqueeText';
 
 let doc = [
@@ -17,7 +17,9 @@ const AboutBanner = () => {
             <p className='text-center mt-3'>
                 Whether you’re here to sharpen skills, launch a career, or build a business—our programs are designed to guide you every step of the way.
             </p>
-            <img src={logo} alt="" />
+            <img src={logo} alt=""
+            className='w-full h-[200px] md:h-[500px] mt-10'
+             />
             <div className='grid grid-cols-2 gap-7 my-6 text-secondary'>
                 {doc.map(item => <div>
                     <p>{item.des}</p>

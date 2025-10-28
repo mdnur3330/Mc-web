@@ -5,6 +5,7 @@ import Service from "../Pages/Service";
 import About from "../Pages/About";
 import Portfolio from "../Pages/Portfolio";
 import PortfolioDetails from "../Component/PortfolioDetails";
+import Testimonial from "../Pages/Testimonial";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,9 @@ export const router = createBrowserRouter([
       },
       {path: "/portfolio-details",
         element: <PortfolioDetails/>
+      },
+      {path: "/testimonial",
+        element: <Testimonial />
       },
     ]
   },

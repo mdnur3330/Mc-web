@@ -24,7 +24,9 @@ const OurStory = () => {
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-10 border-t pt-10">
                 <div className="flex-1">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt=""
+                    className="w-full"
+                    />
                 </div>
                 <div className="flex-1">
                     <p>We exist to empower learners, creators, and entrepreneurs with the tools, mentorship, and community they need to turn ideas into reality. We exist to empower learners, creators, and entrepreneurs with the tools, mentorship, and community they need to turn ideas into reality. We exist to empower learners, creators, and entrepreneurs with the tools, mentorship, and community they need to turn ideas into reality. We exist to empower learners, creators, and entrepreneurs with the tools.  mentorship, and community they need to turn ideas into reality. We exist to empower learners, creators, and entrepreneurs with the tools, mentorship, and community they need to turn ideas into reality. We exist to empower learners, creators, and entrepreneurs with the tools.</p>

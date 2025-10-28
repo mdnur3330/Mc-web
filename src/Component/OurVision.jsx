@@ -22,7 +22,9 @@ const OurVision = () => {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt=""
+                    className="w-full"
+                    />
                 </div>
             </div>
         </Container>
