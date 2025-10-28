@@ -12,8 +12,8 @@ const Stats = () => {
 
   return (
     <Container>
-      <section className="py-14">
-      <div className="flex flex-wrap justify-between gap-10 py-10">
+      <section className="py-10">
+      <div className="flex flex-wrap justify-between gap-10">
         {stats.map((item) => (
           <div key={item.label}>
             <h2 className="section-title">
