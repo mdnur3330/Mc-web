@@ -49,7 +49,7 @@ const programs = [
 const OurPrograms = () => {
   return (
     <Container>
-      <section className="py-20">
+      <section className="py-24">
       <h2 className="section-title mb-10">
         OUR PROGRAMS
       </h2>
@@ -80,12 +80,10 @@ const OurPrograms = () => {
               ))}
             </ul>
 
-            {/* <button className="w-full  text-white py-3 rounded-full font-semibold hover:bg-gray-800 transition">
-              Enroll now
-            </button> */}
+          
           <Button 
           label="Enroll now"
-          className="w-full btn-tertiary shadow-lg"
+          className="w-full btn-tertiary block text-center"
           />
           </div>
         ))}

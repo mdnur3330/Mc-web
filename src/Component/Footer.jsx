@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t py-6 mt-4">
+        <div className="py-6 mt-4">
           <h1 className="section-title py-6">Masterclass</h1>
           <p>BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-</p>
         </div>

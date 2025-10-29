@@ -7,7 +7,7 @@ const CallToAction = () => {
         <section className='bg-tertiary py-20'>
             <Container>
                 <div className='flex justify-between items-end'>
-                    <h3 className='text-xl md:text-2xl font-bold'>START YOUR <br /> JOURNEY TODAY</h3>
+                    <h3 className='section-title'>START YOUR <br /> JOURNEY TODAY</h3>
                     <Button 
                     label='Explore program'
                     className='btn-secondary'

@@ -15,7 +15,7 @@ const AboutBanner = () => {
         <Container>
             <h1 className='section-title text-center mt-14'>We exist to empower <br />learners</h1>
             <p className='text-center mt-3'>
-                Whether you’re here to sharpen skills, launch a career, or build a business—our programs are designed to guide you every step of the way.
+                Whether you’re here to sharpen skills, launch a career, or build a business—our <br /> programs are designed to guide you every step of the way.
             </p>
             <img src={logo} alt=""
             className='w-full h-[200px] md:h-[500px] mt-10'
@@ -25,7 +25,7 @@ const AboutBanner = () => {
                     <p>{item.des}</p>
                 </div>)}
             </div>
-            <div className='my-12 border-y py-5'>
+            <div className='my-22 border-y py-5'>
                             <MarqueeText>
                                 BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-
                             </MarqueeText>

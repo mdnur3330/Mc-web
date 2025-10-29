@@ -9,7 +9,7 @@ const Banner = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="text-center md:text-left max-w-lg">
-            <h1 className="section-title text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-primary">
+            <h1 className="section-title ">
               <span className="hidden md:block">LEARN <br /> Build<br /> Scale</span>
               <span className="md:hidden">LEARN  Build  Scale</span>
             </h1>

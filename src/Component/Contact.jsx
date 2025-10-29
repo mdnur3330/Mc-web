@@ -5,7 +5,7 @@ import Button from "./Button";
 const Contact = () => {
   return (
     <Container>
-      <div className="flex flex-col md:flex-row gap-7 my-16">
+      <div className="flex flex-col md:flex-row gap-7 mb-24">
         <div className="space-y-6 flex-1">
           {/* Contact Form */}
           <div>

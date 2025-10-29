@@ -5,7 +5,7 @@ let years = [2012,2013,2014,2015]
 
 const OurStory = () => {
     return (
-        <section className="bg-secondary py-10">
+        <section className="bg-secondary py-16 my-16">
             <Container>
             <h2 className='section-title'>our story</h2>
             <div className="flex gap-5 my-6">

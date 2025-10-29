@@ -37,7 +37,7 @@ const CommunitySays = () => {
                     </div>)}
                 </div>
             </div>
-            <div className='mt-8 border-b pb-16'>
+            <div className='mt-8 border-b pb-22'>
                 <MarqueeText>
                     BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-
                 </MarqueeText>

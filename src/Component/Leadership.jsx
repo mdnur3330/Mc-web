@@ -12,7 +12,7 @@ const Leadership = () => {
     return (
         <Container>
             <h2 className='section-title '>Leadership</h2>
-            <p className='text-secondary my-3'>A small, experienced team dedicated to learner success</p>
+            <p className='text-secondary mt-4 mb-7 '>A small, experienced team dedicated to learner success</p>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
                 {led.map(item => <div>
                     <img

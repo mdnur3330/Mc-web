@@ -41,7 +41,7 @@ const Faq = () => {
 
   return (
     <Container>
-        <section className="mt-28 flex flex-col md:flex-row justify-between gap-22">
+        <section className="my-28 flex flex-col md:flex-row justify-between gap-22">
         <div className="flex-1">
             <h2 className="section-title">Got <br /> Questions? <br />
              Here's FAQs
@@ -90,11 +90,11 @@ const Faq = () => {
         })}
       </div>
     </section>
-            <div className='py-10'>
+            {/* <div className='py-10'>
                 <MarqueeText>
                     BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-
                 </MarqueeText>
-            </div>
+            </div> */}
     </Container>
     
   );

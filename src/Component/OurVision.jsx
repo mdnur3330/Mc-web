@@ -4,11 +4,11 @@ import Container from './Container';
 const OurVision = () => {
     return (
         <Container>
-            <div className='flex flex-col md:flex-row justify-between gap-7 my-16'>
+            <div className='flex flex-col md:flex-row justify-between gap-7 my-18'>
                 <div className="flex-1">
-                    <div className="md:w-4/6 flex flex-col justify-between gap-14">
+                    <div className="md:w-4/6 flex flex-col justify-between gap-22">
                         <div>
-                        <h3 className="font-bold my-6 md:text-xl">
+                        <h3 className="font-bold mb-6 md:text-xl">
                             “We exist to empower learners, creators, and entrepreneurs.” 
                         </h3>
                         <p>

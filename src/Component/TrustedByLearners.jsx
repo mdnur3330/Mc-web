@@ -1,4 +1,4 @@
-import banner from '../assets/banner.png'
+import banner from '../assets/plaseHolder.png'
 import Container from './Container';
 import MarqueeText from './MarqueeText';
 
