@@ -7,7 +7,7 @@ const MainLayout = () => {
     <div className="bg-[#EEF3F6] pt-5 md:pt-7">
       <Nav />
       <Outlet />
-    
+      <Footer />
     </div>
   );
 };
