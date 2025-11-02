@@ -3,7 +3,7 @@
 :root {
   --color-primary: #070707;
   --color-secondary: #f3f3f3;
-  --color-tertiary:rgba(161, 255, 138, 0.826);
+  --color-tertiary:#A2FF8A;
   --color-tertiary-muted:rgba(147, 232, 126, 0.77);
 
 
@@ -82,14 +82,12 @@ body {
 
 
 
-
-
 @keyframes slide {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-20%);
+    transform: translateX(-8%);
   }
 }
 

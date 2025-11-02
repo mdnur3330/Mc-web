@@ -10,7 +10,7 @@ const Button = ({
     <Link
       type={type}
       onClick={onClick}
-      className={`text-xl px-5 md:px-10 py-2 font-medium md:font-bold cursor-pointer rounded-md md:rounded-full transition shadow-lg ${className}`}
+      className={`text-xl px-5 md:px-10 py-3 font-medium md:font-bold cursor-pointer rounded-md md:rounded-full transition shadow-lg ${className}`}
     >
       {label}
     </Link>

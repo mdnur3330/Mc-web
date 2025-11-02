@@ -1,41 +1,29 @@
 import Container from "./Container";
-import banner from "../assets/banner.png";
 import Button from "./Button";
 
 const Banner = () => {
   return (
-    <section className="bg-secondary py-10 md:py-20">
-      <Container>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+   
+    <Container>
           {/* Left Content */}
-          <div className="text-center md:text-left max-w-lg">
-            <h1 className="section-title ">
-              <span className="hidden md:block">LEARN <br /> Build<br /> Scale</span>
-              <span className="md:hidden">LEARN  Build  Scale</span>
-            </h1>
+          <div className="text-center bg-[#F1FFED] py-20 my-6">
+            <div className="space-y-3 md:space-y-5">
+              <p className="md:text-2xl font-bold">Build, grow, scale</p>
+              <h1 className="text-3xl md:text-6xl font-bold">
+              Build your freelance Business
+              </h1>
+              <p className="md:text-2xl font-bold">into a Sustainable Growth model</p>
+            </div>
 
-            <p className="text-secondary text-base sm:text-lg md:text-xl my-5 leading-relaxed">
-              MasterClass Agency empowers creators and professionals through workshops, bootcamps, and a business incubator—designed to help you learn skills, build projects, and scale your success.
+            <p className="text-secondary text-base sm:text-lg md:text-xl mt-6 mb-10 md:mb-16 leading-relaxed">
+              MasterClass Business Incubator offers a wide range of training and workshops to build the next gen freelancers.
             </p>
-
             <Button
               label="Join a program now"
-              className="btn-primary mx-auto w-full md:mx-0"
+              className="btn-primary"
             />
           </div>
-
-          {/* Right Image */}
-          <div className="w-full md:w-1/2 flex justify-center">
-            <img
-              src={banner}
-              alt="Freelance Banner"
-              className="w-4/5 sm:w-3/4 md:w-full max-w-md object-contain"
-            />
-          </div>
-        </div>
-      </Container>
-    </section>
+    </Container>
   );
 };
-
 export default Banner;

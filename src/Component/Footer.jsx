@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <div className="flex flex-col md:flex-row justify-between">
           <div className="space-y-4">
-            <img src={flogo} alt="" />
+            <Link className="block" to={"/"}><img src={flogo} alt="" /></Link>
             <div className="flex gap-4">
               <Link><Linkedin color="gray" size={30}/> </Link>
               <Link><Twitter color="gray" size={30}/> </Link>

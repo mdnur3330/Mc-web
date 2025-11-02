@@ -4,6 +4,7 @@ import CompanyLogo from '../Component/CompanyLogo';
 import Contact from '../Component/Contact';
 import SkillDevelopmentPrograms from '../Component/SkillDevelopmentPrograms';
 import TrustedByLearners from '../Component/TrustedByLearners';
+import UpcomingEvents from '../Component/UpcomingEvents';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner />
             <CompanyLogo />
             <SkillDevelopmentPrograms />
+            <UpcomingEvents />
             <TrustedByLearners />
             <CommunitySays />
             <Contact />
