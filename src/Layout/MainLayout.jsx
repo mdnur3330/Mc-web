@@ -2,7 +2,6 @@ import Nav from '../Component/Nav';
 import { Outlet } from 'react-router';
 import { Link } from "react-router";
 import flogo from "../assets/fLogo.png"
-import Container from './Container';
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 
 const MainLayout = () => {
@@ -11,7 +10,7 @@ const MainLayout = () => {
             <Nav />
             <Outlet />
              <footer className="bg-primary py-16 text-white">
-      <Container>
+      <div className='mxa-w-7xl'>
         <div className="flex flex-col md:flex-row justify-between">
           <div className="space-y-4">
             <Link className="block" to={"/"}><img src={flogo} alt="" /></Link>
@@ -58,7 +57,7 @@ const MainLayout = () => {
           <h1 className="section-title py-6">Masterclass</h1>
           <p>BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-</p>
         </div>
-      </Container>
+      </div>
     </footer>
         </div>
     );
