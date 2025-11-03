@@ -5,13 +5,13 @@ const Banner = () => {
   return (
     <Container>
       {/* Glass Effect Banner */}
-      <div className="relative flex items-center justify-center min-h-[70vh] my-6">
+      <div className="relative flex items-center justify-center min-h-[70vh] ">
         {/* Background Gradient */}
         <div className="absolute inset-0 "></div>
 
         {/* Glass Card */}
         <div className="relative z-10 text-center backdrop-blur-2xl bg-white/10 border border-white/20 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.25)] 
-                        px-6 md:px-16 py-16 max-w-4xl mx-auto hover:shadow-[0_8px_48px_rgba(0,196,204,0.4)] transition-all duration-500">
+                        px-6 md:px-36 py-22  mx-auto hover:shadow-[0_8px_48px_rgba(0,196,204,0.4)] transition-all duration-500">
           <div className="space-y-3 md:space-y-5">
             <p className="md:text-2xl font-bold text-white/90 drop-shadow-md">
               Build, grow, scale
