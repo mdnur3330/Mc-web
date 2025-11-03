@@ -41,62 +41,70 @@ const Faq = () => {
 
   return (
     <Container>
-        <section className="my-28 flex flex-col md:flex-row justify-between gap-22">
-        <div className="flex-1">
-            <h2 className="section-title">Got <br /> Questions? <br />
-             Here's FAQs
-            </h2>
+      <section className="my-28 p-10 flex flex-col md:flex-row justify-between gap-22 relative">
+        {/* Glass Background Overlay */}
+        <div className="absolute inset-0 bg-white/10 backdrop-blur-xl rounded-3xl pointer-events-none z-0"></div>
+
+        {/* Left Title */}
+        <div className="flex-1 relative z-10">
+          <h2 className="section-title text-white/90">
+            Got <br /> Questions? <br />
+            Here's FAQs
+          </h2>
         </div>
-      <div className="space-y-3 flex-1">
-        {faqs.map((faq, index) => {
-          const isActive = activeIndex === index;
 
-          return (
-            <div
-              key={index}
-              className="bg-secondary p-5 transition-all hover:shadow-sm cursor-pointer"
-              onClick={() => toggleFAQ(index)}
-            >
-              {/* Question Row */}
-              <div className="flex justify-between items-center">
-                <h3 className="text-lg font-semibold">
-                  Q: {faq.question}
-                </h3>
-                <motion.div
-                  animate={{ rotate: isActive ? 180 : 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <ChevronDown className="text-secondary" size={22} />
-                </motion.div>
-              </div>
+        {/* Right FAQ List */}
+        <div className="space-y-4 flex-1 relative z-10">
+          {faqs.map((faq, index) => {
+            const isActive = activeIndex === index;
 
-              {/* Answer */}
-              <AnimatePresence>
-                {isActive && (
+            return (
+              <div
+                key={index}
+                className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-5 transition-all hover:shadow-2xl cursor-pointer"
+                onClick={() => toggleFAQ(index)}
+              >
+                {/* Question Row */}
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg font-semibold text-white/90">
+                    Q: {faq.question}
+                  </h3>
                   <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    animate={{ rotate: isActive ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <p className="mt-3 text-secondary text-sm leading-relaxed overflow-hidden">
-                      {faq.answer}
-                    </p>
+                    <ChevronDown className="text-white/70" size={22} />
                   </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-            {/* <div className='py-10'>
-                <MarqueeText>
-                    BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-
-                </MarqueeText>
-            </div> */}
+                </div>
+
+                {/* Answer */}
+                <AnimatePresence>
+                  {isActive && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
+                    >
+                      <p className="mt-3 text-white/70 text-sm leading-relaxed overflow-hidden">
+                        {faq.answer}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Optional Marquee */}
+      {/* <div className='py-10'>
+        <MarqueeText>
+          BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-
+        </MarqueeText>
+      </div> */}
     </Container>
-    
   );
 };
 

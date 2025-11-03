@@ -1,65 +1,3 @@
-// import logo from '../assets/banner.png'
-// import review from '../assets/group.png'
-// import client from '../assets/Client.jpeg'
-// import Button from './Button';
-// import Container from './Container';
-// import MarqueeText from './MarqueeText';
-
-// let items = [
-//     {name: "Laura", deg: "Parent of 8th grade student", img: logo, des: "I didn’t know online tutoring could be this individualized. I’d never considered it before, but one session changed my mind.”"},
-//     {name: "Laura", deg: "Parent of 8th grade student", img: logo, des: "I didn’t know online tutoring could be this individualized. I’d never considered it before, but one session changed my mind.”"},
-//     {name: "Laura", deg: "Parent of 8th grade student", img: logo , des: "I didn’t know online tutoring could be this individualized. I’d never considered it before, but one session changed my mind.”"},
-// ]
-
-
-// const CommunitySays = () => {
-//     return (
-//         <Container>
-//             <h2 className='section-title text-center my-10'>What our <br /> community says</h2>
-//             <div className='flex flex-col md:flex-row justify-between gap-10 bg-tertiary p-5 md:p-14'>
-//                 <div className='flex-1 text-center'>
-//                     <img src={review} alt="" />
-//                     <Button
-//                     label='Join a program now'
-//                     className='btn-secondary  my-4 w-full'
-//                     />
-//                 </div>
-//                 <div className='flex-1'>
-//                     {items.map( item => <div className='flex gap-4 my-13'>
-//                         <img src={client} alt="" className='w-16 h-16 rounded-full' />
-//                         <div className='flex flex-col justify-between gap-4'>
-//                             <p>{item.des}</p>
-//                             <div>
-//                                 <h3 className='font-bold'>{item.name}</h3>
-//                                 <p>{item.deg}</p>
-//                             </div>
-//                         </div>
-//                     </div>)}
-//                 </div>
-//             </div>
-//             <div className='mt-8 border-b pb-22'>
-//                 <MarqueeText>
-//                     BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-
-//                 </MarqueeText>
-//             </div>
-//         </Container>
-//     );
-// };
-
-// export default CommunitySays;
-
-
-
-
-
-
-
-
-
-
-
-
-
 import logo from '../assets/banner.png';
 import review from '../assets/group.png';
 import client from '../assets/Client.jpeg';
@@ -88,7 +26,7 @@ const CommunitySays = () => {
     <Container>
       {/* Title */}
       <motion.h2
-        className='section-title text-center my-10'
+        className='text-center my-10 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00C4CC] to-[#0F3C3C]'
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -99,7 +37,11 @@ const CommunitySays = () => {
 
       {/* Main Content */}
       <motion.div
-        className='flex flex-col md:flex-row justify-between gap-10 bg-tertiary p-5 md:p-14'
+        className='flex flex-col md:flex-row justify-between gap-10 
+                   bg-white/10 backdrop-blur-2xl border border-white/20 
+                   rounded-3xl p-5 md:p-14 shadow-[0_8px_32px_rgba(0,0,0,0.3)] 
+                   hover:shadow-[0_8px_40px_rgba(0,196,204,0.3)] 
+                   transition-all duration-500'
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -107,7 +49,7 @@ const CommunitySays = () => {
       >
         {/* Left */}
         <motion.div
-          className='flex-1 text-center'
+          className='flex-1 text-center flex flex-col items-center justify-center'
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -116,24 +58,32 @@ const CommunitySays = () => {
           <motion.img
             src={review}
             alt=""
+            className='w-full drop-shadow-[0_0_25px_rgba(0,196,204,0.3)]'
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
           />
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <Button label='Join a program now' className='btn-secondary my-4 w-full' />
+            <Button
+              label='Join a program now'
+              className='w-full mt-6 bg-gradient-to-r from-[#00C4CC] to-[#0F3C3C] 
+                         text-white rounded-full py-3 px-6 font-semibold 
+                         shadow-[0_0_15px_rgba(0,196,204,0.6)] hover:shadow-[0_0_25px_rgba(0,196,204,0.8)] 
+                         transition-all duration-300'
+            />
           </motion.div>
         </motion.div>
 
         {/* Right */}
         <motion.div
-          className='flex-1'
+          className='flex-1 flex flex-col justify-center'
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true }}
@@ -143,22 +93,28 @@ const CommunitySays = () => {
               key={i}
               custom={i}
               variants={cardVariant}
-              className='flex gap-4 my-13'
+              className='flex gap-4 my-3 bg-white/10 backdrop-blur-xl 
+                         border border-white/20 rounded-2xl p-5 
+                         shadow-[0_8px_24px_rgba(0,0,0,0.2)] 
+                         hover:shadow-[0_8px_32px_rgba(0,196,204,0.3)] 
+                         transition-all duration-300'
             >
               <motion.img
                 src={client}
                 alt=""
-                className='w-16 h-16 rounded-full'
+                className='w-16 h-16 rounded-full border-2 border-[#00C4CC]/60 shadow-md'
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 viewport={{ once: true }}
               />
               <div className='flex flex-col justify-between gap-4'>
-                <p>{item.des}</p>
+                <p className='text-gray-100 leading-relaxed italic'>
+                  {item.des}
+                </p>
                 <div>
-                  <h3 className='font-bold'>{item.name}</h3>
-                  <p>{item.deg}</p>
+                  <h3 className='font-semibold text-[#00C4CC]'>{item.name}</h3>
+                  <p className='text-gray-300 text-sm'>{item.deg}</p>
                 </div>
               </div>
             </motion.div>
@@ -168,14 +124,16 @@ const CommunitySays = () => {
 
       {/* Marquee */}
       <motion.div
-        className='mt-8 border-b pb-22'
+        className='mt-10 border-y border-white/20 py-5 backdrop-blur-xl bg-[#0F3C3C]/20 rounded-xl'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
       >
         <MarqueeText>
-          BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-
+          BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-
+          BEYOND-BRILLIANT-EXPERIMENT-BEYOND-BRILLIANT-EXPERIMENT-
+          BEYOND-BRILLIANT-
         </MarqueeText>
       </motion.div>
     </Container>
